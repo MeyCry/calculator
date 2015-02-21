@@ -88,7 +88,7 @@ var Calculator = React.createClass({
         })
     },
     handlerClick: function (e) {
-        if (e.target.innerText === "clear") return this.setState({expression: 0});
+        if (e.target.innerText === "clear") return this.setState({expression: ""});
         this.setState({expression: this.state.expression + e.target.innerText});
         setTimeout(function () {
             console.log(this.state.expression);
